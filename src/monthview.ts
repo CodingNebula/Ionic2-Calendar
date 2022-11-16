@@ -25,7 +25,7 @@ import {IMonthViewDisplayEventTemplateContext} from './calendar';
         <div>
             <ion-slides #monthSlider [options]="sliderOptions" [dir]="dir" (ionSlideDidChange)="onSlideChanged()">
                 <ion-slide>
-                    <table *ngIf="0===currentViewIndex" class="table table-bordered table-fixed monthview-datetable">
+                    <table *ngIf="0===currentViewIndex" class="table  table-fixed monthview-datetable">
                         <thead>
                         <tr>
                             <th *ngFor="let dayHeader of views[0].dayHeaders">
@@ -44,7 +44,7 @@ import {IMonthViewDisplayEventTemplateContext} from './calendar';
                         </tr>
                         </tbody>
                     </table>
-                    <table *ngIf="0!==currentViewIndex" class="table table-bordered table-fixed monthview-datetable">
+                    <table *ngIf="0!==currentViewIndex" class="table table-fixed monthview-datetable">
                         <thead>
                         <tr class="text-center">
                             <th *ngFor="let dayHeader of views[0].dayHeaders">
@@ -64,7 +64,7 @@ import {IMonthViewDisplayEventTemplateContext} from './calendar';
                     </table>
                 </ion-slide>
                 <ion-slide>
-                    <table *ngIf="1===currentViewIndex" class="table table-bordered table-fixed monthview-datetable">
+                    <table *ngIf="1===currentViewIndex" class="table table-fixed monthview-datetable">
                         <thead>
                         <tr>
                             <th *ngFor="let dayHeader of views[1].dayHeaders">
@@ -83,7 +83,7 @@ import {IMonthViewDisplayEventTemplateContext} from './calendar';
                         </tr>
                         </tbody>
                     </table>
-                    <table *ngIf="1!==currentViewIndex" class="table table-bordered table-fixed monthview-datetable">
+                    <table *ngIf="1!==currentViewIndex" class="table table-fixed monthview-datetable">
                         <thead>
                         <tr class="text-center">
                             <th *ngFor="let dayHeader of views[1].dayHeaders">
@@ -103,7 +103,7 @@ import {IMonthViewDisplayEventTemplateContext} from './calendar';
                     </table>
                 </ion-slide>
                 <ion-slide>
-                    <table *ngIf="2===currentViewIndex" class="table table-bordered table-fixed monthview-datetable">
+                    <table *ngIf="2===currentViewIndex" class="table table-fixed monthview-datetable">
                         <thead>
                         <tr>
                             <th *ngFor="let dayHeader of views[2].dayHeaders">
@@ -122,7 +122,7 @@ import {IMonthViewDisplayEventTemplateContext} from './calendar';
                         </tr>
                         </tbody>
                     </table>
-                    <table *ngIf="2!==currentViewIndex" class="table table-bordered table-fixed monthview-datetable">
+                    <table *ngIf="2!==currentViewIndex" class="table table-fixed monthview-datetable">
                         <thead>
                         <tr class="text-center">
                             <th *ngFor="let dayHeader of views[2].dayHeaders">
