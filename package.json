@@ -18,9 +18,8 @@
         "build": "rm -rf dist && npm run build.ng",
         "build.ng": "ng-packagr -p package.json",
         "build.es2015": "node_modules/.bin/ngc -p tsconfig.json",
-        "ngcc": "ngcc --properties es2015 browser main module --async false --first-only",
         "dev": "tsc --watch",
-        "postinstall": "npm run ngcc"
+        "postinstall": "ngcc"
     },
     "main": "./index.js",
     "dependencies": {},
